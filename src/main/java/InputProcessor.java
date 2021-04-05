@@ -23,19 +23,19 @@ public class InputProcessor {
             final String middleName = fioGenerator.getMiddleName();
 
             final PhysGenerator physGenerator = new PhysGenerator();
-            physGenerator.generateParams(intCode);
-            final Physical physical = physGenerator.buildResponse();
+            //physGenerator.generateParams(intCode);
+            final Physical physical = physGenerator.buildResponse(intCode);
 
             final AppearanceGenerator appearanceGenerator = new AppearanceGenerator();
-            appearanceGenerator.generateParams(intCode);
-            final Appearance appearance = appearanceGenerator.buildResponse();
+            //appearanceGenerator.generateParams(intCode);
+            final Appearance appearance = appearanceGenerator.buildResponse(intCode);
 
             Phone phone = null;
             // добавляем телефон, только если введённый код не палиндром
             if (!input.equals(new StringBuilder(input).reverse().toString())) {
                 final PhoneGenerator phoneGenerator = new PhoneGenerator();
-                phoneGenerator.generateParams(intCode);
-                phone = phoneGenerator.buildResponse();
+                //phoneGenerator.generateParams(intCode);
+                phone = phoneGenerator.buildResponse(intCode);
             }
 
             result = new Person(input,

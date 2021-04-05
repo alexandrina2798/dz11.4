@@ -4,8 +4,8 @@ import person.appearance.hair.Hair;
 
 public class Appearance {
 
-    private final String eyes;
-    private final Hair hair;
+    private String eyes;
+    private Hair hair;
 
     public Appearance(final String eyes, final Hair hair) {
         this.eyes = eyes;
