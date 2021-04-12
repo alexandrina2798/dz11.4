@@ -1,5 +1,5 @@
 package generators;
-//игнорирую CheckStyle, так как на лекции в примере DTO использовались именно паблик переменные
+
 public class FIO {
     private static String lastName;
     private static String firstName;

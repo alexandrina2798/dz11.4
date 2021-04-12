@@ -12,11 +12,11 @@ import person.appearance.templates.NinthAppearance;
 import person.appearance.templates.DefaultAppearance;
 
 public class AppearanceGenerator implements Generator<Appearance> {
-
+/*
     private String eyes;
     private int hairLength;
     private String hairColor;
-
+*/
     /**
      * было
      * Внешность генерируется по третьей цифре кода (i):
