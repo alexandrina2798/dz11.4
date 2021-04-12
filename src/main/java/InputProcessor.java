@@ -1,7 +1,4 @@
-import generators.AppearanceGenerator;
-import generators.FioGenerator;
-import generators.PhoneGenerator;
-import generators.PhysGenerator;
+import generators.*;
 import person.Person;
 import person.Phone;
 import person.Physical;
@@ -18,9 +15,9 @@ public class InputProcessor {
 
             final FioGenerator fioGenerator = new FioGenerator();
             fioGenerator.generateParams(intCode);
-            final String lastName = fioGenerator.getLastName();
-            final String firstName = fioGenerator.getFirstName();
-            final String middleName = fioGenerator.getMiddleName();
+            final String lastName = FIO.getLastName();
+            final String firstName = FIO.getFirstName();
+            final String middleName = FIO.getMiddleName();
 
             final PhysGenerator physGenerator = new PhysGenerator();
             //physGenerator.generateParams(intCode);

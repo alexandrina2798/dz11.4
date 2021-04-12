@@ -30,7 +30,7 @@ public class FioGenerator {
         middleName = getLinesFromFile("middleNames_" + sex).get(getDigitsSum(code % 100));
         return new FIO(lastName, firstName, middleName);
     }
-
+/*
     public final String getLastName() {
         return lastName;
     }
@@ -42,7 +42,7 @@ public class FioGenerator {
     public final String getMiddleName() {
         return middleName;
     }
-/*
+
     private void setLastNameFromFile(final int i, final String sex) {
         lastName = getLinesFromFile("lastNames_" + sex).get(i);
     }
